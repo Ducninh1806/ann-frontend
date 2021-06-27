@@ -1,0 +1,53 @@
+[data-toggle="collapse"]:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+  transform: rotate(90deg) ;
+  transition: all linear 0.25s;
+  float: right;
+  padding: 4px;
+}
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(0deg) ;
+}
+
+.margin-auto {
+  margin: auto !important;
+}
+
+.padding-left-1rem {
+  padding-left: 1rem!important;
+}
+
+.padding-inherit {
+  padding: inherit
+}
+
+.card-search-shop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header-shop{
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+}
+
+.margin-left-15px{
+  margin-left: 15px;
+}
+
+.margin-left-28px{
+  margin-left: 28px;
+}

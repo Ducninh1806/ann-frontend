@@ -28,9 +28,39 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/vendor/bootstrap/css/bootstrap.min.css",
+              "src/styles/fonts/font-awesome-4.7.0/css/font-awesome.min.css",
+              "src/styles/fonts/iconic/css/material-design-iconic-font.min.css",
+              "src/styles/fonts/linearicons-v1.0.0/icon-font.min.css",
+              "src/styles/vendor/animate/animate.css",
+              "src/styles/vendor/css-hamburgers/hamburgers.min.css",
+              "src/styles/vendor/animsition/css/animsition.min.css",
+              "src/styles/vendor/select2/select2.min.css",
+              "src/styles/vendor/daterangepicker/daterangepicker.css",
+              "src/styles/vendor/slick/slick.css",
+              "src/styles/vendor/MagnificPopup/magnific-popup.css",
+              "src/styles/vendor/perfect-scrollbar/perfect-scrollbar.css",
+              "src/styles/css/util.css",
+              "src/styles/css/main.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/styles/vendor/jquery/jquery-3.2.1.min.js",
+              "src/styles/vendor/animsition/js/animsition.min.js",
+              "src/styles/vendor/bootstrap/js/popper.js",
+              "src/styles/vendor/bootstrap/js/bootstrap.min.js",
+              "src/styles/vendor/select2/select2.min.js",
+              "src/styles/vendor/daterangepicker/moment.min.js",
+              "src/styles/vendor/daterangepicker/daterangepicker.js",
+              "src/styles/vendor/slick/slick.min.js",
+              "src/styles/js/slick-custom.js",
+              "src/styles/vendor/parallax100/parallax100.js",
+              "src/styles/vendor/MagnificPopup/jquery.magnific-popup.min.js",
+              "src/styles/vendor/isotope/isotope.pkgd.min.js",
+              "src/styles/vendor/sweetalert/sweetalert.min.js",
+              "src/styles/vendor/perfect-scrollbar/perfect-scrollbar.min.js",
+              "src/styles/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +153,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ann-frontend"
+    }
+  },
+  "defaultProject": "ann-frontend",
+  "cli": {
+    "analytics": false
+  }
 }

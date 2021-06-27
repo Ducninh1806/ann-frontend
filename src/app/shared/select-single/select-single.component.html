@@ -1,0 +1,11 @@
+<ngx-select
+  [formControl]="selectControl"
+  [allowClear]="true"
+  [items]="items"
+  (select)="onSelectValue()"
+  (remove)="onChangeRemove()"
+  noResultsFound="Không tìm thấy kết quả"
+  optionValueField="{{fieldValue}}"
+  optionTextField="{{fieldName}}"
+  placeholder="{{title}}">
+</ngx-select>

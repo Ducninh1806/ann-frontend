@@ -1,0 +1,56 @@
+
+<!--<div class="row mt-5" >-->
+<!--  <div class="col text-center pagination d-flex justify-content-center " >-->
+<!--    <div class="block-27 flex-c-m flex-w w-full p-t-38" *ngIf="searchObject.totalPages" >-->
+<!--      <ul>-->
+<!--        <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="goToPage(0)"-->
+<!--            [ngClass]="{'disabled': searchObject.page <= 5}">-->
+<!--          <a class="ripple-effect"><i class="icon-feather-chevrons-left">  </i> </a>-->
+<!--        </li>-->
+<!--        <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="previousPage()"-->
+<!--            [ngClass]="{'disabled': searchObject.page === 0}">-->
+<!--          <a class="ripple-effect">&lt;</a>-->
+<!--        </li>-->
+<!--        <li *ngFor="let page of arrPage" class="flex-c-m how-pagination1 trans-04 m-all-7">-->
+<!--          <a (click)="goToPage(page)" class="ripple-effect"-->
+<!--             [ngClass]="{'current-page': page === searchObject.page}">{{page + 1}}</a>-->
+<!--        </li>-->
+<!--        <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="nextPage()"-->
+<!--            [ngClass]="{'disabled': searchObject.totalPages-1 === searchObject.page}">-->
+<!--          <a class="ripple-effect">&gt;</a>-->
+<!--        </li>-->
+<!--        <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="goToPage(searchObject.totalPages-1)"-->
+<!--            [ngClass]="{'disabled': (searchObject.totalPages < 5 || searchObject.page > searchObject.totalPages - 4) }">-->
+<!--          <a class="ripple-effect"><i class="icon-feather-chevrons-right">  </i> </a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div >
+  <ul class="flex-c-m flex-w w-full p-t-38">
+    <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="goToPage(0)"
+        [ngClass]="{'disabled': searchObject.page <= 5}">
+      <a class="ripple-effect">&lt;&lt; </a>
+    </li>
+    <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="previousPage()"
+        [ngClass]="{'disabled': searchObject.page === 0}">
+      <a class="ripple-effect">&lt;</a>
+    </li>
+    <li *ngFor="let page of arrPage" class="">
+      <a (click)="goToPage(page)" class="ripple-effect flex-c-m how-pagination1 trans-04 m-all-7"
+         [ngClass]="{'active-pagination1': page === searchObject.page}">{{page + 1}}</a>
+    </li>
+    <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="nextPage()"
+        [ngClass]="{'disabled': searchObject.totalPages-1 === searchObject.page}">
+      <a class="ripple-effect">&gt;</a>
+    </li>
+    <li class="flex-c-m how-pagination1 trans-04 m-all-7" (click)="goToPage(searchObject.totalPages-1)"
+        [ngClass]="{'disabled': (searchObject.totalPages < 5 || searchObject.page > searchObject.totalPages - 4) }">
+      <a class="ripple-effect">&gt;&gt; </a>
+    </li>
+  </ul>
+</div>
+
